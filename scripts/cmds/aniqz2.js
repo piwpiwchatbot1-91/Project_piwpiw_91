@@ -55,14 +55,14 @@ module.exports = {
       }, event.messageID);
     } catch (error) {
       console.error(error);
-      api.sendMessage("🥹error, contact MahMUD.", event.threadID, event.messageID);
+      api.sendMessage("🥹error, contact Gojo Orupe Piw Piw.", event.threadID, event.messageID);
     }
   },
 
   onReply: async function ({ event, api, Reply, usersData }) {
     const { correctAnswer, author, messageID } = Reply;
     if (event.senderID !== author)
-      return api.sendMessage("⚠️ This quiz isn’t yours baby 🐸", event.threadID, event.messageID);
+      return api.sendMessage("⚠️ Piw Piw Chat Bot This quiz isn’t yours darling 🐸", event.threadID, event.messageID);
 
     await api.unsendMessage(messageID);
 
@@ -77,9 +77,9 @@ module.exports = {
         exp: userData.exp + rewardExp,
         data: userData.data
       });
-      return api.sendMessage(`✅ | Correct answer baby 💕\nYou earned +${rewardCoins} coins & +${rewardExp} exp!`, event.threadID, event.messageID);
+      return api.sendMessage(`✅ | Piw Piw Chat Bot Correct answer baby 💕\nYou earned +${rewardCoins} coins & +${rewardExp} exp!`, event.threadID, event.messageID);
     } else {
-      return api.sendMessage(`❌ | Wrong answer baby\nThe Correct answer was: ${correctAnswer}`, event.threadID, event.messageID);
+      return api.sendMessage(`❌ | Piw Piw Chat Bot Wrong answer baby\nThe Correct answer was: ${correctAnswer}`, event.threadID, event.messageID);
     }
   }
 };
