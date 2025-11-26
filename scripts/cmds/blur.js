@@ -28,14 +28,14 @@ module.exports = {
                 if (args[0] && !isNaN(args[0])) {
                     const level = parseInt(args[0]);
                     if (level >= 1 && level <= 100) blurLevel = level;
-                    else return message.reply("❌ | Please enter a blur level between 1–100.");
+                    else return message.reply("❌ | Piw Piw Chat Bot Please enter a blur level between 1–100.");
                 }
             } else if (args[0]?.startsWith("http")) {
                 imageUrl = args[0];
                 if (args[1] && !isNaN(args[1])) {
                     const level = parseInt(args[1]);
                     if (level >= 1 && level <= 100) blurLevel = level;
-                    else return message.reply("❌ | Please enter a blur level between 1–100.");
+                    else return message.reply("❌ | Piw Piw Chat Bot Please enter a blur level between 1–100.");
                 }
             } else if (!isNaN(args[0]) && event.type === "message_reply" && event.messageReply.attachments?.length > 0) {
                 const level = parseInt(args[0]);
@@ -46,7 +46,7 @@ module.exports = {
             } else return message.reply("❌ | Please reply to an image or provide an image URL.");
 
             api.setMessageReaction("😘", event.messageID, () => {}, true);
-            const waitMsg = await message.reply("Baby, Please wait a moment <😘");
+            const waitMsg = await message.reply("Piw Piw Chat Bot, Please wait a moment <😘");
          
             const apiUrl = await mahmud();
             const imgStream = `${apiUrl}/api/blur/mahmud?url=${encodeURIComponent(imageUrl)}&blurLevel=${blurLevel}`;
@@ -60,7 +60,7 @@ module.exports = {
 
         } catch (error) {
             console.error(error);
-            message.reply(`🥹error, contact MahMUD.`);
+            message.reply(`🥹error, contact Gojo Orupe Piw Piw.`);
         }
     }
 };
