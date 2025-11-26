@@ -30,7 +30,7 @@ module.exports = {
         const attachment = await global.utils.getStreamFromURL(checkImageURL);
 
         if (!attachment) {
-          throw new Error("Failed to create attachment. Stream is null or undefined.");
+          throw new Error("Piw Piw Chat Bot Failed to create attachment. Stream is null or undefined.");
         }
 
         await message.reply(
@@ -43,7 +43,7 @@ module.exports = {
               await api.editMessage("✅ The bot's media is not banned.", checkMessage.messageID);
             } else {
               message.reply("❌ The bot's media has been moye moye.");
-              throw new Error("Media may be blocked, message did not send correctly.");
+              throw new Error("Piw Piw Chat Bot Media may be blocked, message did not send correctly.");
             }
           }
         );
