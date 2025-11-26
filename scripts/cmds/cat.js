@@ -23,18 +23,18 @@ module.exports = {
       const images = res.data?.images;
       
       if (!images || images.length === 0) 
-        return message.reply("No cat images found from API.");
+        return message.reply("Piw Piw Chat Bot No cat images found from API.");
 
       const attachments = await Promise.all(images.map(url => getStreamFromURL(url)));
       
       await api.sendMessage({
-        body: "🐱 | | 𝐇𝐞𝐫𝐞'𝐬 𝐲𝐨𝐮𝐫 𝐫𝐚𝐧𝐝𝐨𝐦 𝐜𝐚𝐭 𝐢𝐦𝐚𝐠𝐞𝐬",
+        body: "🐱 | | 𝐏𝐢𝐰 𝐏𝐢𝐰 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭 𝐇𝐞𝐫𝐞'𝐬 𝐲𝐨𝐮𝐫 𝐫𝐚𝐧𝐝𝐨𝐦 𝐜𝐚𝐭 𝐢𝐦𝐚𝐠𝐞𝐬",
         attachment: attachments
       }, event.threadID, event.messageID);
 
     } catch (err) {
       console.error(err);
-      message.reply("An error occurred while fetching cat images.");
+      message.reply("Piw Piw Chat Bot An error occurred while fetching cat images.");
     }
 
     async function getStreamFromURL(url) {
