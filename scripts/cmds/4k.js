@@ -42,10 +42,10 @@ module.exports = {
     }
 
     if (!imgUrl) {
-      return message.reply("Baby, Please reply to an image or provide an image URL");
+      return message.reply("Darling, Please reply to an image or provide an image URL");
     }
   
-    const waitMsg = await message.reply("𝐋𝐨𝐚𝐝𝐢𝐧𝐠 𝟒𝐤 𝐢𝐦𝐚𝐠𝐞...𝐰𝐚𝐢𝐭 𝐛𝐚𝐛𝐲 <😘");
+    const waitMsg = await message.reply("𝐏𝐢𝐰 𝐏𝐢𝐰 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭 𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝟒𝐤 𝐢𝐦𝐚𝐠𝐞...𝐰𝐚𝐢𝐭 𝐝𝐚𝐫𝐥𝐢𝐧𝐠 <😘");
     message.reaction("😘", event.messageID);
 
     try {
@@ -60,7 +60,7 @@ module.exports = {
       const processTime = ((Date.now() - startTime) / 1000).toFixed(2);
 
       message.reply({
-        body: `✅ | 𝐇𝐞𝐫𝐞'𝐬 𝐲𝐨𝐮𝐫 𝟒𝐤 𝐢𝐦𝐚𝐠𝐞 𝐛𝐚𝐛𝐲`,
+        body: `✅ | 𝐏𝐢𝐰 𝐏𝐢𝐰 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭 𝐡𝐞𝐫𝐞'𝐬 𝐲𝐨𝐮𝐫 𝟒𝐤 𝐢𝐦𝐚𝐠𝐞 𝐝𝐚𝐫𝐥𝐢𝐧𝐠`,
         attachment: res.data
       });
 
@@ -69,7 +69,7 @@ module.exports = {
       if (waitMsg?.messageID) message.unsend(waitMsg.messageID);
 
       message.reaction("❎", event.messageID);
-      message.reply(`🥹error baby, contact MahMUD.`);
+      message.reply(`🥹error baby, contact Gojo Orupe Piw Piw.`);
     }
   }
 };
