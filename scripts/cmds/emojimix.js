@@ -19,8 +19,8 @@ module.exports = {
 
   langs: {
     en: {
-      error: "Sorry, emoji %1 and %2 can't be mixed.",
-      success: "Emoji %1 and %2 mixed successfully!"
+      error: "Piw Piw Chat Bot Sorry, emoji %1 and %2 can't be mixed.",
+      success: "Piw Piw Chat Bot Emoji %1 and %2 mixed successfully!"
     }
   },
 
@@ -53,7 +53,7 @@ async function generateEmojimix(emoji1, emoji2) {
 
     return response.data;
   } catch (error) {
-    console.error("Failed to fetch emojimix:", error.message);
+    console.error("Piw Piw Chat Bot Failed to fetch emojimix:", error.message);
     return null;
   }
 }
