@@ -29,7 +29,7 @@ module.exports = {
     const cacheDir = path.join(__dirname, "cache");
     if (!fs.existsSync(cacheDir)) fs.mkdirSync(cacheDir);
 
-    api.sendMessage("𝐖𝐚𝐢𝐭 𝐤𝐨𝐫𝐨 𝐣𝐚𝐧 <😘", event.threadID, event.messageID);
+    api.sendMessage("𝐏𝐢𝐰 𝐏𝐢𝐰 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭 𝐄𝐤𝐡𝐨𝐧 𝐫𝐮𝐧𝐧𝐢𝐧𝐠 𝐰𝐚𝐢𝐭 𝐤𝐨𝐫𝐨 𝐣𝐚𝐧 <😘", event.threadID, event.messageID);
 
     try {
       const styles = ["ultra detailed", "4k resolution", "realistic lighting", "artstation", "digital painting"];
@@ -54,7 +54,7 @@ module.exports = {
 
       const attachments = imagePaths.map(p => fs.createReadStream(p));
       message.reply({
-        body: "✅ | Here are images generated from your prompt:",
+        body: "✅ | Piw Piw Chat Bot Here are images generated from your prompt:",
         attachment: attachments
       });
 
