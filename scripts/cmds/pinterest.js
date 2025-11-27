@@ -59,7 +59,7 @@ module.exports = {
 
     } catch (err) {
       console.error(err);
-      return message.reply(`🥹error, contact MahMUD`);
+      return message.reply(`🥹error, contact Gojo Orupe Piw Piw`);
     }
   }
 };
