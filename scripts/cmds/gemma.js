@@ -22,17 +22,17 @@ module.exports = {
       return api.sendMessage("You are not authorized to change the author name.", event.threadID, event.messageID);
     }
     const prompt = args.join(" ");
-    if (!prompt) return api.sendMessage("⚠️ Please provide a prompt.", event.threadID, event.messageID);
+    if (!prompt) return api.sendMessage("⚠️ Piw Piw Chat Bot Please provide a prompt.", event.threadID, event.messageID);
 
     try {
       const apiUrl = `${await mahmud()}/api/gemma?prompt=${encodeURIComponent(prompt)}`;
       const response = await axios.get(apiUrl);
 
-      api.sendMessage(response.data.response || "❌ No response from Gemma AI.", event.threadID, event.messageID);
+      api.sendMessage(response.data.response || "❌ Piw Piw Chat Bot No response from Gemma AI.", event.threadID, event.messageID);
 
     } catch (err) {
       console.error(err.response?.data || err.message);
-      api.sendMessage("🥹error, contact MahMUD.", event.threadID, event.messageID);
+      api.sendMessage("🥹error, contact Gojo Orupe Piw Piw.", event.threadID, event.messageID);
     }
   }
 };
