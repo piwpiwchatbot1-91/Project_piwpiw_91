@@ -55,14 +55,14 @@ module.exports = {
       }, event.messageID);
     } catch (error) {
       console.error(error);
-      api.sendMessage("🥹error, contact MahMUD.", event.threadID, event.messageID);
+      api.sendMessage("🥹error, contact Gojo Orupe Piw Piw.", event.threadID, event.messageID);
     }
   },
 
   onReply: async function ({ event, api, Reply, usersData }) {
     const { correctAnswer, author, messageID } = Reply;
     if (event.senderID !== author)
-      return api.sendMessage("⚠️ This quiz isn’t yours baby 🐸", event.threadID, event.messageID);
+      return api.sendMessage("⚠️ Piw Piw Chat Bot This quiz isn’t yours baby 🐸", event.threadID, event.messageID);
 
     await api.unsendMessage(messageID);
 
