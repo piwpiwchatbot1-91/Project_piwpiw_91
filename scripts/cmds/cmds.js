@@ -56,13 +56,13 @@ module.exports.onStart = async function ({ api, event, args }) {
     const endIndex = startIndex + ITEMS_PER_PAGE;
     const cmdsToShow = finalArray.slice(startIndex, endIndex);
 
-    let msg = `╭─‣ 𝐇𝐢𝐧𝐚𝐭𝐚 𝐒𝐭𝐨𝐫𝐞 🎀\n├‣ 𝐀𝐝𝐦𝐢𝐧: 𝐌𝐚𝐡𝐌𝐔𝐃\n├‣ 𝐓𝐨𝐭𝐚𝐥 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬: ${finalArray.length}\n╰────────────◊\n`;
+    let msg = `╭─‣ 𝐏𝐈𝐖 𝐏𝐈𝐖 𝐒𝐓𝐎𝐑𝐄 🎀\n├‣ 𝐀𝐝𝐦𝐢𝐧: 𝐆𝐎𝐉𝐎 𝐎𝐑𝐔𝐏𝐄 𝐏𝐈𝐖 𝐏𝐈𝐖\n├‣ 𝐓𝐨𝐭𝐚𝐥 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬: ${finalArray.length}\n╰────────────◊\n`;
 
     cmdsToShow.forEach((cmd, index) => {
       msg += `╭─‣ ${startIndex + index + 1}: ${cmd.cmd}\n├‣ Author: ${cmd.author}\n├‣ Update: ${cmd.update}\n╰────────────◊\n`;
     });
 
-    msg += `\n📄 | 𝐏𝐚𝐠𝐞 [${page}-${totalPages}]\nℹ | 𝐓𝐲𝐩𝐞 !cmds ${page + 1} - 𝐭𝐨 𝐬𝐞𝐞 𝐧𝐞𝐱𝐭 𝐩𝐚𝐠𝐞.`;
+    msg += `\n📄 | 𝐏𝐚𝐠𝐞 [${page}-${totalPages}]\nℹ | 𝐓𝐲𝐩𝐞 +cmds ${page + 1} - 𝐭𝐨 𝐬𝐞𝐞 𝐧𝐞𝐱𝐭 𝐩𝐚𝐠𝐞.`;
 
     api.sendMessage(
       msg,
@@ -90,7 +90,7 @@ module.exports.onStart = async function ({ api, event, args }) {
 
 module.exports.onReply = async function ({ api, event, Reply }) {
   if (Reply.author != event.senderID) {
-    return api.sendMessage("Error", event.threadID, event.messageID);
+    return api.sendMessage("not your reaply baby🐸", event.threadID, event.messageID);
   }
   const reply = parseInt(event.body);
   const startIndex = (Reply.page - 1) * ITEMS_PER_PAGE;
